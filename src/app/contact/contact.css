@@ -1,0 +1,76 @@
+
+
+
+.container-contact {
+    width: 100%;
+  max-width: 400px;      
+  margin: 20px auto;     
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.container-contact h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.container-contact form {
+  display: flex;
+  flex-direction: column; /* sab column mai set hoga */
+  gap: 12px;              /* elements ke beech gap */
+}
+
+.container-contact label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.container-contact input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+.container-contact input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 4px rgba(37,99,235,0.4);
+}
+
+.btn-submit {
+  padding: 12px;
+  background: #9a9c9f;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  
+}
+
+.whatsapp_float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.whatsapp_float img {
+  width: 35px;
+  height: 35px;
+}
+
