@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: white;
+  padding: 20px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center the links */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 50px; /* Spacing between links */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black; /* Text color black */
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s;
+  text-align: center;
+  padding:14px 16px ;
+}
+
+.nav-links a:hover {
+  color: #ff9800; /* Optional hover effect */
+}
+
+
+button{
+
+    background-color: red;
+    color: white;
+    align-items: left;
+    border: 1px solid red;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+ .center-btn {
+    position: absolute;
+    top: 61%;
+    left: 45%;
+    /* transform: translate(-50%, -50%); */
+    padding: 12px 24px;
+    background: red;
+    /* border: none; */
+    border-radius: 0px;
+    /* font-size: 18px; */
+    cursor: pointer;
+  }
+
+  .column{
+  float: right;
+  width: 30%;
+  padding: 15px;
+}
+
+.grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 10px 5px; 
+}
+
+
+
+
+     .grid-container img {
+      width: 100%;
+      height: 50px;
+      object-fit: cover; 
+      border-radius: 5px;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .grid-container img:hover {
+      transform: scale(1.05);
+    }
+  .card{
+ float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.colum1::after{
+
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image-container {
+    position: relative;   /* text ko image ke upar rakhne ke liye */
+    display: inline-block;
+    width: 100%;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 400px;
+    margin-top: 2px;
+    border-radius: 0px;
+  }
+
+  .image-text {
+    position: absolute;
+    top: 25%;          /* vertical center */
+    left: 50%;         /* horizontal center */
+    transform: translate(-50%, -50%); /* perfect center */
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* readability improve */
+  }
+ 
+   ul a {
+      color: black;              
+      text-decoration: none;     
+      font-size: 16px;
+      
+    }
+    ul a:hover {
+      color: orange;             
+    }
+
+  .newsletter-form{
+      text-align: center;
+      }
+
+      .letter{
+        height: 31px;
+
+
+
+      }
+
+      
