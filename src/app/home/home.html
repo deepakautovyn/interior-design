@@ -1,3 +1,13 @@
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("service_gd69h22"); // Your EmailJS User ID
+  })();
+</script>
+
+
+</head>
 <div class="image-container">
   <img src="img2.png" alt="Interior Design" width="100%" height="500px" />
   <button class="center-btn">Explore Services</button>
@@ -68,17 +78,38 @@
 </div>
 
 
-<div style="display: flex;align-items: center;justify-content: center;text-align: center;width: 100%; background-color: rgb(200, 194, 194);height: 200PX; margin-top: 25PX;">
-  <div><h1 style="font-family: Arial, Helvetica, sans-serif">Connect with us</h1>
+<div style="display: flex; align-items: center; justify-content: center; text-align: center; width: 100%; background-color: rgb(200, 194, 194); height: 200px; margin-top: 25px;">
+  <div>
+    <h1 style="font-family: Arial, Helvetica, sans-serif;">Connect with us</h1>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <h6 style="font-family: Arial, Helvetica, sans-serif;">Reach out on Whatsapp or given a call for best home design experence</h6>
-  <button style="background-color: rgb(4, 4, 90);color: white;border: 1px solid rgb(3, 3, 78);margin-right: 10px;" type="button"><i class="fa-solid fa-phone"></i>Call Now</button>
-  <button  style="background-color: rgb(4, 4, 90);color: white;border: 1px solid rgb(3, 3, 78)" type="button"><i class="fab fa-whatsapp"></i>Whatsapp</button>
+    <h6 style="font-family: Arial, Helvetica, sans-serif;">Reach out on WhatsApp or give a call for best home design experience</h6>
+    
+    <!-- Call Button -->
+    <a href="tel:+916375542312">
+      <button style="background-color: rgb(4, 4, 90); 
+                     color: white; 
+                     border: 1px solid rgb(3, 3, 78); 
+                     margin-right: 10px; 
+                     cursor: pointer;">
+        <i class="fa-solid fa-phone"></i> Call Now
+      </button>
+    </a>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/916375542312" target="_blank">
+      <button style="background-color: rgb(4, 4, 90);
+                     color: white;
+                     border: 1px solid rgb(3, 3, 78);
+                     margin-right: 10px;
+                     cursor: pointer;">
+        <i class="fab fa-whatsapp"></i> Whatsapp
+      </button>
+    </a>
+  </div>
 </div>
-  
-</div>
+
 
 <h3 style="text-align: center; color: black; font: size 25px;font-family: Arial, Helvetica, sans-serif; margin-top: 25px;"> Interior work gallery</h3>
 <div class="video-section">
@@ -151,3 +182,19 @@
     </form> 
     </div>  
   </div>
+
+  <script>
+document.getElementById("newsletter-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  emailjs.send("service_gd69h22", "template_ab12cd", { // Replace template_ab12cd with your Template ID
+    user_email: document.getElementById("user_email").value,
+    to_email: "irvinei880@gmail.com"
+  }).then(function(response) {
+      alert("✅ Thank you! Your email has been sent.");
+  }, function(error) {
+      alert("❌ Failed to send email. Please try again.");
+      console.log(error);
+  });
+});
+</script>
